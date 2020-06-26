@@ -1,0 +1,220 @@
+.header
+    height: 100vh
+    position: absolute
+    background: url('../img/hero-z.png') no-repeat
+    background-size: cover
+    width: 100%
+    z-index: -2
+    &-bgc
+        position: absolute
+        z-index: -1
+        width: 100%
+        height: 100vh
+        background: linear-gradient(-56deg, #fff 30%,transparent 30%, transparent 65%, $primary 65%)
+    &-z
+        
+.wrap   
+    width: 100%
+    position: fixed
+.navigation
+    padding-top: 3%
+    display: flex
+    align-items: center
+    &-logo
+        padding-top: 5px
+        display: flex
+        align-items: center
+        &__img
+        &__text
+            margin-left: 5px
+    &-menu
+        flex: 0 1 50%
+        display: flex
+        list-style: none
+        justify-content: space-around
+        padding: 0
+        &__button                
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin-bottom: 5px
+            margin-right: 5px
+            display: none
+            span
+                content: ''
+                width: 20px
+                height: 3px
+                background-color: #fff
+                margin-top: 6px
+        &__text
+            text-decoration: none
+            text-transform: uppercase
+            +regular
+            font-size: 1.2rem
+            color: $white
+    &-contacts
+        flex: 0 1 32%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__button
+            margin-right: 5px
+            padding: 12px 28px
+        &-social
+            display: flex
+            justify-content: space-between
+            &__links
+                display: flex
+                width: 36px
+                height: 36px
+                align-items: center
+                justify-content: center
+                background: rgba(255, 255, 255, 0.3)
+                border-radius: 50%
+                margin-left: 5px
+
+.user__button
+    display: flex
+    width: 36px
+    height: 36px
+    align-items: center
+    justify-content: center
+    background: rgba(255, 255, 255, 0.3)
+    border-radius: 50%
+    margin-left: 5px
+    display: none
+.user-cabinet
+    fill: $white
+.hero
+    margin-top: 20%
+    &__title
+        +bold
+        color: $white
+        font-size: 4rem
+        line-height: 130%
+    &-block
+        display: flex
+        justify-content: space-between
+        padding-bottom: 50px
+        padding-top: 20px
+    &-body
+        flex-basis: 40%
+        margin-right: 20px
+        &__text
+            margin-top: 5%
+            margin-bottom: 10%
+            +regular
+            color: $white
+            font-size: 1.6rem
+            display: block
+            line-height: 160%
+        &__list
+            list-style: none
+            margin-top: 25%
+            margin-bottom: 30px
+            li
+                +regular
+                color: $white
+                font-size: 1.6rem
+                margin-bottom: 1.6rem
+                display: flex
+                align-items: center
+                &::before
+                    content: ''
+                    width: 1.1rem
+                    height: 1.1rem
+                    display: block
+                    border-radius: 50%
+                    background-color: #fff
+                    margin-right: 12px
+        &__button
+            padding: 14px 32px
+            background: #33CC66
+            box-shadow: 8px 16px 28px rgba(0, 111, 74, 0.07)
+            font-size: 1.8rem
+            display: inline-block
+    &-modal
+        flex-basis: 35%
+        text-align: center
+        background-color: #fff
+        box-shadow: 40px 20px 72px rgba(0, 0, 0, 0.1)
+        border-radius: 16px
+        height: 100%
+        padding: 20px 3%
+        &__title
+            +semibold
+            font-size: 2.2rem
+            font-weight: 600
+            line-height: 160%
+        &-body
+            display: flex            
+        &__number
+            background: #DEFFE6
+            border: 1px solid #A9F3BC
+            border-radius: 10px
+            text-align: center
+            padding: 12px 0
+            margin-right: 25px
+            width: 100% 
+            font-size: 2rem
+        &__currency
+            background: #E8DEFF
+            border: 1px solid #CFBDF9
+            border-radius: 10px
+            padding: 15px 45px
+            font-size: 2rem
+        &__button
+            margin-top: 22px
+            background: #33CC66
+            font-size: 1.8rem
+            width: 100%
+        &-income
+            display: flex
+            justify-content: space-between
+            margin-top: 21px
+            +semibold
+            font-size: 1.5rem
+            &__number
+                color: $primary
+
+@media ( max-width: 992px )
+    .navigation
+        justify-content: space-between
+        &-menu
+            display: none
+            &__button
+                display: flex
+                flex-basis: 30%
+                align-items: flex-end
+                margin-left: 5px
+    .hero
+        margin-top: 120px
+        &-modal
+
+            &-body
+                display: block
+            &__number
+                margin-bottom: 10px
+
+
+@media ( max-width: 650px )
+    .navigation
+        &-contacts
+            &__button
+                display: none
+    .user__button
+        display: flex
+    .hero
+        &-block
+            display: block
+        &-body
+            &__list
+                margin-top: 5%
+                width: 80%
+@media ( max-width: 425px )
+    .navigation
+        &-logo
+            &__text
+                display: none
+
+    
