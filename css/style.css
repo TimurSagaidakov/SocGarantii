@@ -79,7 +79,7 @@ ul {
 
 .header {
   height: 100vh;
-  position: absolute;
+  position: relative;
   background: url("../img/hero-z.png") no-repeat;
   background-size: cover;
   width: 100%;
@@ -194,7 +194,7 @@ ul {
 }
 
 .hero {
-  margin-top: 20%;
+  padding-top: 20%;
 }
 
 .hero__title {
@@ -337,7 +337,7 @@ ul {
     margin-left: 5px;
   }
   .hero {
-    margin-top: 120px;
+    padding-top: 25%;
   }
   .hero-modal-body {
     display: block;
@@ -356,16 +356,89 @@ ul {
   }
   .hero-block {
     display: block;
+    text-align: center;
   }
   .hero-body__list {
     margin-top: 5%;
     width: 80%;
+    text-align: center;
   }
 }
 
 @media (max-width: 425px) {
   .navigation-logo__text {
     display: none;
+  }
+}
+
+.features {
+  margin-top: 10rem;
+}
+
+.features__title {
+  font-family: 'Open Sans Semibold';
+  font-weight: normal;
+  font-size: 3.2rem;
+  width: 40%;
+}
+
+.features__text {
+  font-family: 'Open Sans Regular';
+  font-weight: normal;
+  font-size: 1.6rem;
+  width: 50%;
+  display: block;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+
+.features-blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.features-block {
+  box-sizing: border-box;
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  align-items: center;
+  padding-bottom: 10rem;
+  justify-content: center;
+}
+
+.features-block__text {
+  font-family: 'Open Sans Semibold';
+  font-weight: normal;
+  font-size: 1.6rem;
+  margin-top: 27px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  .features__title {
+    width: 80%;
+  }
+  .features__text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .features__title {
+    text-align: center;
+    width: 100%;
+  }
+  .features__text {
+    text-align: center;
+    width: 100%;
+  }
+  .features-blocks {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
