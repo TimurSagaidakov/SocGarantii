@@ -82,7 +82,7 @@ ul {
 }
 
 .header {
-  height: 100vh;
+  height: 100%;
   position: relative;
   background: url("../img/hero-z.png") no-repeat;
   background-size: cover;
@@ -94,7 +94,7 @@ ul {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(-56deg, #fff 30%, transparent 30%, transparent 65%, #4B48F3 65%);
 }
 
@@ -199,6 +199,7 @@ ul {
 
 .hero {
   padding-top: 20%;
+  margin-bottom: 100px;
 }
 
 .hero__title {
@@ -380,7 +381,7 @@ ul {
 }
 
 .features {
-  margin-top: 350px;
+  margin-top: 150px;
 }
 
 .features__title {
